@@ -11,7 +11,7 @@ resource "aws_spot_instance_request" "spot" {
 }
 
 
-module "ec2_instance" {
+module "aws_instance" "od" {
   count                         = var.OD_COUNT
   ami                           = data.aws_ami.my_image.id
   instance_type                 = var.INSTANCE_TYPE
