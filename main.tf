@@ -1,5 +1,5 @@
 resource "aws_spot_instance_request" "spot" {
-  count                     = var.SP_COUNT  
+  count                     = 0 #var.SP_COUNT  
   ami                       = data.aws_ami.my_image.id
   instance_type             = var.INSTANCE_TYPE
   wait_for_fulfillment      = true
