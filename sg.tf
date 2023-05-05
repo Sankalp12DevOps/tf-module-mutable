@@ -1,5 +1,5 @@
 resource "aws_security_group" "allow_tls_prvtappservers" {
-  name        = "allow_tls_lb"
+  name        = "allow_tls_comonents"
   description = "Allow TLS inbound traffic"
   vpc_id      = data.terraform_remote_state.vpc.outputs.ROBO_VPC_ID
 
