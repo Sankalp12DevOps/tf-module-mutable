@@ -1,4 +1,4 @@
-resource "null_resource"{
+resource "null_resource" "prov"{
   count      =  var.OD_COUNT + var.SP_COUNT
 
    provisioner "remote-exec" {
